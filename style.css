@@ -80,3 +80,22 @@ progress {
 .progress__maxvalue {
     text-align: right;
 }
+
+@media (min-width: 1100px) {
+    body {
+        background-color: hsl(228, 56%, 26%);
+        background-image: url(images/bg-desktop.png);
+    }
+
+    .module {
+        flex-direction: row;
+        margin: 5rem 0;
+        justify-content: center;
+    }
+
+    .storage {    
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+}
