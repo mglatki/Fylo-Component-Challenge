@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/bg-mobile.png);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.module {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 2rem;
+}
+
+.logo {
+    background: hsl(228, 56%, 26%);
+    border-radius: 1em 5em 1em 1em;
+    display: inline-block;
+    padding: 2em;
+}
+
+.buttons {
+    align-items: center;
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+.col {
+    background: hsl(229, 57%, 11%);
+    border-radius: 0.5em;
+    height: 2.5em;
+    width: 2.5em;
+    list-style: none;
+    /* padding: 0.5em; */
+    text-align: center;
+}
+
+.col a img {
+    /* padding-top: 1em; */
+    vertical-align: bottom;
+}
+
+.col + .col {
+    margin-left: 1em;
+}
+
+.storage {    
+    background: hsl(228, 56%, 26%);
+    border-radius: 1em;
+    color: white;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 2em;
+}
+
+.storage__message {
+    text-align: center;
+}
+
+progress {
+    display: inline;
+    width: 100%;
+}
+
+.progress__values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__value {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.progress__maxvalue {
+    text-align: right;
+}
