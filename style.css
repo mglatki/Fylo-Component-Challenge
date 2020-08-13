@@ -2,12 +2,24 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr auto;
+
     background: url(images/bg-mobile.png);
+    background-color: hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    background-position: bottom right;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .module {
@@ -124,16 +136,12 @@ progress {
     }
 
     body {
-        background-color: hsl(229, 57%, 11%);
         background-image: url(images/bg-desktop.png);
-        background-repeat: no-repeat;
-        background-position: bottom left;
         height: 100%;
     }
 
     .module {
         flex-direction: row;
-        margin: 5rem 0;
         justify-content: center;
     }
 
@@ -155,7 +163,7 @@ progress {
         grid-column: 1/-1;
         grid-row: 2/-1;
         margin-top: 0;
-        margin-left: 1rem;
+        margin-left: 2rem;
         min-width: 25rem;
     }
 
