@@ -83,6 +83,23 @@ header {
 progress {
     display: inline;
     width: 100%;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background: hsl(229, 57%, 11%);
+    border: none;
+    border-radius: 0.5em;
+}
+
+progress[value]::-moz-progress-bar { 
+    background-image:
+      -moz-linear-gradient(
+        left, 
+        rgb(241, 156, 87), 
+        rgb(231, 20, 101)
+      );
 }
 
 .progress__values {
